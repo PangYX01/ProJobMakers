@@ -355,15 +355,23 @@ ul {
   background-color: var(--light-gray);
 }
 
+.part-full-time .horizontal-container {
+  display: flex;
+}
+
 .part-full-time .left-container {
-  width: 50%;
-  padding-right: 8%;
+  align-items: center;
+  width: 45%;
+  margin-right: 50px;
 }
 
 .part-full-time .right-container {
-  width: 50%;
-  padding-left: 8%;
-  background-color: red;
+  align-items: center;
+  width: 55%;
+  margin-left: 50px;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 35px;
 }
 
 .part-full-time h2 {
