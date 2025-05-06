@@ -14,19 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
   
         // Change the icon based on the state
         icon.textContent = isActive ? "-" : "+"
-  
-        // 🔹 Make question blue when active
-        question.classList.toggle("active", isActive)
 
         // Close other FAQ items
         faqItems.forEach((otherItem) => {
           if (otherItem !== item) {
-            const otherQuestion = otherItem.querySelector(".faq-question")
             const otherContent = otherItem.querySelector(".faq-content")
             const otherIcon = otherItem.querySelector(".faq-icon")
   
             if (otherContent.classList.contains("active")) {
-              otherQuestion.classList.remove("active")
               otherContent.classList.remove("active")
               otherIcon.textContent = "+"
             }
