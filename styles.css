@@ -835,6 +835,11 @@ footer {
 
 .privacy h2 {
   text-align: left;
+  color: var(--darker-blue);
+}
+
+.privacy h3 {
+  color: var(--darker-blue);
 }
 
 /* Responsive Styles */
