@@ -618,6 +618,7 @@ ul {
 }
 
 .user-info h4 {
+  color: var(--primary-color);
   margin-bottom: 0;
 }
 
@@ -647,7 +648,7 @@ ul {
 .faq-item {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  padding: 15px;
+  padding: 20px 25px;
   margin: 15px 0;
 }
 
