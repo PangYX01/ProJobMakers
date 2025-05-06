@@ -489,7 +489,6 @@ ul {
 }
 
 .step p {
-  font-size: 0.9rem;
   color: var(--text-light);
   text-align: left;
 }
@@ -902,110 +901,5 @@ footer {
     flex-direction: column;
     gap: 10px;
     text-align: center;
-  }
-}
-
-/*Contact Form*/
-/* Base Form Container */
-.form-box {
-  margin: 40px;
-  padding: 35px;
-  background: #fff;
-  border-radius: 8px;
-  font-family: Arial, sans-serif;
-}
-
-/* Field Groups */
-.qbform-field-group {
-  margin-bottom: 20px;
-}
-
-/* Labels */
-.qbform-field-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #333;
-}
-
-/* Inputs & Selects */
-.qbform-field-input,
-.qbform-col--phone-prefix-select {
-  width: 100%;
-  padding: 10px 12px;
-  font-size: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  transition: border 0.2s ease;
-}
-
-.qbform-field-input:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-/* Phone Row */
-.qbform-row {
-  display: flex;
-  gap: 10px;
-}
-
-.qbform-col--phone-prefix {
-  flex: 0 0 120px;
-}
-
-.qbform-col--auto {
-  flex: 1;
-}
-
-/* Checkbox Styling */
-.qbform-field-check {
-  display: flex;
-  align-items: flex-start;
-}
-
-.qbform-field-check-input {
-  margin-right: 10px;
-  transform: scale(1.2);
-  margin-top: 3px;
-}
-
-.qbform-field-check-label {
-  font-size: 14px;
-  color: #555;
-}
-
-/* reCAPTCHA (optional styling container) */
-.qbform-field--recaptcha {
-  margin-top: 20px;
-}
-
-/* Submit Button */
-.qbform-btn {
-  width: 100%;
-  background: #007bff;
-  color: white;
-  padding: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.qbform-btn:hover {
-  background: #0056b3;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .qbform-row {
-    flex-direction: column;
-  }
-
-  .qbform-col--phone-prefix {
-    flex: 1;
   }
 }
