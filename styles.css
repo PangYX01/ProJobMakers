@@ -402,6 +402,7 @@ ul {
 
 .stat-items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
 }
@@ -439,6 +440,11 @@ ul {
   font-size: 0.9rem;
   opacity: 0.8;
   display: block;
+  margin-bottom: 20px;
+}
+
+.stat-item::after {
+  display: none;
 }
 
 /* How It Works Section */
@@ -446,11 +452,6 @@ ul {
   padding: 100px 0;
   background-color: var(--white);
 }
-
-/*.how-it-works .stay-left-container {
-  display: flex;
-  flex-direction: column;
-}*/
 
 .how-it-works h2, .how-it-works p {
   text-align: left;
@@ -469,7 +470,7 @@ ul {
 }
 
 .step {
-  text-align: center;
+  text-align: left;
   flex: 1;
   padding: 0 15px;
 }
@@ -479,18 +480,15 @@ ul {
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 15px;
-  text-align: left;
 }
 
 .step h3 {
   color: var(--dark-blue);
   margin-bottom: 25px;
-  text-align: left;
 }
 
 .step p {
   color: var(--text-light);
-  text-align: left;
 }
 
 /* Perfect Opportunity Section */
@@ -500,7 +498,8 @@ ul {
 }
 
 .perfect-opportunity .container {
-  padding: 100px 0;
+  padding: 100px 80px;
+  width: 95%;
   background-color: var(--dark-blue);
   border-radius: var(--border-radius);
 }
@@ -510,7 +509,6 @@ ul {
 }
 
 .perfect-opportunity p {
-  max-width: 700px;
   margin: 0 auto 30px;
 }
 
