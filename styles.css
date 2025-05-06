@@ -113,7 +113,7 @@ ul {
 
 /* Navigation */
 .navbar {
-  background-color: var(--light-gray);
+  background-color: var(--white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
   width: 100%;
