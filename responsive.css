@@ -1,4 +1,22 @@
 /* Responsive Styles for Different Device Sizes */
+@media (max-width: 1200px) {
+     /* Navigation */
+    /* Hide regular nav links */
+  .nav-links {
+    display: none;
+  }
+
+  /* Show mobile menu toggle */
+  .mobile-menu-toggle {
+    display: block !important;
+  }
+  
+  /* Adjust button size */
+  .btn-primary {
+    display: none; /* Or move it into the mobile menu */
+  }
+}
+
 
 /* Tablet Landscape (1100px and below) */
 @media (max-width: 1100px) {
@@ -13,14 +31,14 @@
   
     /* Container width */
     .container {
-      max-width: 960px;
+      max-width: 90%;
     }
-  
-    /* Navigation */
-    .nav-links {
-      gap: 15px;
-    }
-  
+
+  /* Adjust navbar padding */
+  .navbar {
+    padding: 15px 0;
+  }
+
     /* Job Opportunities Section */
     .job-type {
       padding: 25px;
@@ -42,12 +60,13 @@
     }
   
     .part-full-time .left-container {
-      width: 50%;
+      width: 55%;
       margin-right: 0;
     }
   
     .part-full-time .right-container {
-      width: 50%;
+      width: 45%;
+      padding: 35px;
       margin-left: 0;
     }
   
@@ -64,13 +83,14 @@
     /*Perfect Opportunity */
     .perfect-opportunity .container {
         width: 90%;
+        padding: 80px 70px;
     }
 
     /* Why Choose Us Section */
     .why-choose-content {
       gap: 30px;
     }
-  
+    
     /* Testimonials */
     .testimonial-cards {
       gap: 15px;
@@ -82,6 +102,7 @@
   
     /* Footer */
     .footer-container {
+      max-width: 90%;
       gap: 30px;
     }
   }
@@ -140,6 +161,7 @@
     }
   
     .part-full-time .horizontal-container {
+      gap: 0 !important;
       flex-direction: column;
     }
   
@@ -150,6 +172,7 @@
     }
   
     .part-full-time .right-container {
+      padding: 30px;
       margin-top: 30px;
       min-height: 300px;
     }
@@ -202,7 +225,7 @@
   
     /* Perfect Opportunity */
     .perfect-opportunity .container {
-      padding: 70px 20px;
+      padding: 70px 65px;
     }
   
     /* Why Choose Us */
@@ -212,6 +235,8 @@
   
     .why-choose-content {
       flex-direction: column;
+      align-items: start;
+      width: 100%;
     }
   
     .image-content {
@@ -240,6 +265,7 @@
   
     /* Footer */
     .footer-container {
+      max-width: 90%;
       flex-direction: column;
     }
   
@@ -276,6 +302,7 @@
   
     /* Container */
     .container {
+        max-width: 90%;
       padding: 0 15px;
     }
   
@@ -285,6 +312,30 @@
       padding: 10px 20px;
       font-size: 0.95rem;
     }
+
+    /*Navbar */
+    .navbar {
+        padding: 12px 0;
+      }
+    
+      .logo img {
+        height: 24px;
+      }
+    
+      .mobile-menu-toggle span {
+        width: 22px;
+        height: 2px;
+      }
+    
+      .mobile-menu {
+        top: 60px;
+      }
+    
+      
+      .btn-primary {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+      }
   
     /* Hero Section */
     .hero {
@@ -309,6 +360,10 @@
       padding: 50px 0;
     }
   
+    .job-types {
+        flex-direction: column;
+      }
+    
     .job-cards {
       grid-template-columns: 1fr;
     }
@@ -322,6 +377,10 @@
       padding: 50px 0;
     }
   
+    .part-full-time .right-container {
+        padding: 30px;
+      }
+
     /* Stats Section */
     .stat-items {
         display: grid;
@@ -370,9 +429,13 @@
   
     /* Perfect Opportunity */
     .perfect-opportunity .container {
-      padding: 50px 15px;
+      padding: 60px 55px;
     }
   
+    .perfect-opportunity h2 {
+        font-size: 1.8rem;
+      }
+
     /* Why Choose Us */
     .why-choose-us {
       padding: 50px 0;
@@ -387,6 +450,14 @@
       padding: 50px 0;
     }
   
+    .user {
+        justify-content: center;
+      }
+
+    .quote {
+        text-align: center;
+    }
+    
     /* FAQ */
     .faq {
       padding: 50px 0;
@@ -428,6 +499,15 @@
     .logo img {
       height: 22px;
     }
+
+    .mobile-menu {
+        top: 55px;
+      }
+    
+      .mobile-menu a {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+      }
   
     /* Hero Section */
     .hero {
@@ -469,6 +549,10 @@
       padding: 40px 0;
     }
   
+    .part-full-time .right-container {
+        padding: 20px;
+      }
+
     .part-full-time h2 {
       font-size: 1.5rem;
     }
@@ -528,9 +612,11 @@
       .step-number {
         font-size: 2rem;
         margin-bottom: 10px;
+        text-align: center;
       }
     
       .step h3 {
+        text-align: center;
         font-size: 1.2rem;
         margin-bottom: 8px;
       }
@@ -541,9 +627,17 @@
   
     /* Perfect Opportunity */
     .perfect-opportunity .container {
-      padding: 40px 15px;
+      padding: 50px 40px;
     }
   
+    .perfect-opportunity h2 {
+        font-size: 1.5rem;
+      }
+    
+      .perfect-opportunity p {
+        font-size: 0.9rem;
+      }
+
     /* Why Choose Us */
     .why-choose-us {
       padding: 40px 0;
@@ -563,13 +657,17 @@
     }
   
     .user {
+      align-items: center;
       flex-direction: column;
-      align-items: flex-start;
     }
   
     .user-img {
       margin-bottom: 10px;
       margin-right: 0;
+    }
+
+    .user-info h4, .user-info p {
+        text-align: center;
     }
   
     /* FAQ */
@@ -656,8 +754,24 @@
       display: block;
     }
   
+    
     .btn-primary {
       padding: 8px 15px;
       font-size: 0.9rem;
     }
   }  
+
+  /* Adjust top position for smaller screens */
+@media (max-width: 767px) {
+    .mobile-menu {
+      top: 55px;
+      height: calc(100vh - 55px);
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .mobile-menu {
+      top: 50px;
+      height: calc(100vh - 50px);
+    }
+  }

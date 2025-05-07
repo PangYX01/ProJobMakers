@@ -157,6 +157,62 @@ ul {
   color: var(--primary-color);
 }
 
+/* Mobile menu toggle button */
+.mobile-menu-toggle {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+  z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--dark-blue);
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 0;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-menu a {
+  color: var(--text-dark);
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--border-color);
+  font-weight: 500;
+  display: block;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  background-color: var(--light-gray);
+  color: var(--primary-color);
+}
+
+.mobile-menu.active {
+  display: flex;
+  max-height: 425px; /* Set a reasonable max height */
+  overflow-y: auto; /* Make it scrollable if needed */
+}
+
 /* Hero Section */
 .hero {
   background-color: var(--dark-blue);
@@ -370,6 +426,7 @@ ul {
   align-items: center;
   width: 55%;
   margin-left: 50px;
+  padding: 35px;
   background-color: var(--white);
   border-radius: var(--border-radius);
 }
@@ -495,11 +552,12 @@ ul {
 .perfect-opportunity {
   color: var(--white);
   text-align: center;
+  padding: 0 20px;
 }
 
 .perfect-opportunity .container {
+  max-width: 1260px;
   padding: 100px 80px;
-  width: 95%;
   background-color: var(--dark-blue);
   border-radius: var(--border-radius);
 }
@@ -531,6 +589,8 @@ ul {
 
 .text-content {
   flex: 1;
+  align-items: start;
+    width: 100%;
 }
 
 .text-content h2 {
@@ -586,7 +646,7 @@ ul {
 .testimonial-cards {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .testimonial-card {
@@ -634,7 +694,6 @@ ul {
 }
 
 .faq-items {
-  max-width: 800px;
   margin: 0 auto 30px;
 }
 
@@ -696,7 +755,7 @@ footer {
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -800,14 +859,14 @@ footer {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.2);
   margin: 40px auto;
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
 /* Footer bottom */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   font-size: 14px;
 }
@@ -835,69 +894,4 @@ footer {
 
 .privacy h3 {
   color: var(--dark-blue);
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .job-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .why-choose-content {
-    flex-direction: column;
-  }
-
-  .image-content {
-    order: -1;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .job-types {
-    flex-direction: column;
-  }
-
-  .job-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .stat-items {
-    flex-wrap: wrap;
-  }
-
-  .stat-item {
-    width: 50%;
-    margin-bottom: 20px;
-  }
-
-  .stat-item:nth-child(2n)::after {
-    display: none;
-  }
-
-  .steps {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .testimonial-cards {
-    flex-direction: column;
-  }
-
-  .testimonial-card {
-    width: 100%;
-  }
-
-  .footer-container {
-    flex-direction: column;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
 }
